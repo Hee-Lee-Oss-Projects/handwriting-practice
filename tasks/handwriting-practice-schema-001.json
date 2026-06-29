@@ -1,0 +1,35 @@
+{
+  "id": "handwriting-practice-schema-001",
+  "title": "Formation-model JSON Schema + canonical data model",
+  "project": "handwriting-practice",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "accessibility", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "handwriting-practice generates printable letter/number formation sheets from a data-first model of how each glyph is written (strokes, order, direction, guideline geometry) rather than from proprietary worksheet fonts. Before modeling any glyph, the project needs one versioned, openly-licensed schema that all scripts, templates, and provenance records conform to, so the renderer is deterministic and the license/provenance gate can be enforced structurally. The model is the durable asset; PDFs are a projection of it.",
+  "objective": "Define and publish the versioned JSON Schema and canonical data model (ScriptModel, GlyphModel, Stroke, GuidelineSystem, SheetTemplate, StyleVariant, AssetProvenance) that every script model and generated sheet conforms to.",
+  "acceptanceCriteria": [
+    "JSON Schema defines ScriptModel, GlyphModel, Stroke, GuidelineSystem, SheetTemplate, StyleVariant, and AssetProvenance with all fields described in PLAN section 6.",
+    "GlyphModel includes ordered strokes[] (path, order, startPoint, directionHint), guidelineAlignment, optional positionalForms (e.g. Arabic isolated/initial/medial/final), and a required sourceRef citing an authoritative formation source.",
+    "ScriptModel includes script (ISO 15924), direction (ltr|rtl), font (AssetProvenance), reviewers[], and schemaVersion.",
+    "AssetProvenance captures license {id,url,permitsRedistribution,permitsDerivatives,reservedFontName?,snapshotRef}, attribution, and retrievedAt so the provenance gate can enforce open licensing by default-deny.",
+    "Schema is versioned; the spec document is licensed CC-BY-4.0; at least one worked example model validates against the schema.",
+    "pnpm build && pnpm test && pnpm lint pass for any committed tooling; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\handwriting-practice\\PLAN.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "SIL Open Font License (OFL) 1.1",
+    "ISO 15924 script codes",
+    "Datasheets/provenance pattern: planning/projects/open-data-datasheets"
+  ],
+  "output": "A versioned formation-model JSON Schema plus a canonical data-model document, committed to the project repo and ready for use by all per-script modeling, rendering, and provenance-gate tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
