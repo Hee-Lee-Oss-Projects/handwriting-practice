@@ -1,0 +1,36 @@
+{
+  "id": "handwriting-practice-font-003",
+  "title": "Verify + vendor one open Latin font through the gate",
+  "project": "handwriting-practice",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "open-content", "licensing"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "All glyph outlines must come from an OFL, PD/CC0, or CC font — no proprietary school or handwriting font. The project's primary Latin candidate is SIL Andika (OFL), a literacy-oriented font, but its fitness as a formation model font (not just a reading font) must be verified, its license snapshot committed, and it must pass the provenance gate defined in gate-002. Until one font is gate-verified and vendored, no Latin glyph can be modeled or rendered.",
+  "objective": "Identify, evaluate, and vendor at least one openly-licensed Latin font through the gate-002 provenance gate: confirm OFL (or equivalent) terms permit redistribution and derivatives, verify fitness for formation modeling, commit a license snapshot (local copy + SHA-256 + Wayback URL), and produce a gate PASS artifact.",
+  "acceptanceCriteria": [
+    "At least one Latin font (primary candidate: SIL Andika OFL) is confirmed to permit redistribution and derivatives under OFL or equivalent open terms.",
+    "Font fitness for formation modeling is documented: glyph outlines are clear enough for tracing guides; literacy design does not impede formation clarity.",
+    "License snapshot committed: local copy of OFL text, SHA-256 hash, and Wayback Machine URL, following the gate-002 snapshot format.",
+    "OFL Reserved Font Name status checked and recorded; overlay approach confirmed to avoid RFN violations.",
+    "gate-002 PASS artifact issued for this font and committed to the repo.",
+    "If SIL Andika is found unfit, at least one alternate open Latin font is evaluated and the decision documented.",
+    "Document committed; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 7A (Fonts), section 16 open Q2",
+    "SIL Andika font — https://software.sil.org/andika/",
+    "SIL Open Font License (OFL) 1.1",
+    "gate-002 policy document and snapshot format",
+    "Wayback Machine — https://web.archive.org/"
+  ],
+  "output": "A committed provenance record for the chosen Latin font (license snapshot + SHA-256 + Wayback URL + gate PASS artifact), plus a brief evaluation note on formation fitness, vendored into data/latin/ or a designated fonts/ directory.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "handwriting-practice-reviewer-004",
+  "title": "Name/secure formation reviewer role (blocking gate role)",
+  "project": "handwriting-practice",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The provenance and pedagogical review gates require a named human reviewer to sign off on formation accuracy before any glyph set ships. For Latin, this is a maintainer-level role requiring literacy/formation expertise; for non-Latin scripts (M2+), a script-literate reviewer who is a native/fluent writer or qualified teacher of that script is mandatory. Without a named reviewer, the pilot-007 5-glyph end-to-end loop cannot close, and M0 cannot exit.",
+  "objective": "Identify and confirm at least one named formation reviewer for Latin (and document the role requirements for future non-Latin script reviewers), producing a committed reviewer-roles document and at least one named Latin reviewer willing to sign the per-glyph checklist.",
+  "acceptanceCriteria": [
+    "A reviewer-roles document is committed defining the qualifications for: (a) Latin/technical formation reviewer and (b) script-literate reviewer for non-Latin scripts.",
+    "At least one named Latin formation reviewer is confirmed and recorded (name/handle + contact + affiliation if applicable + conflict-of-interest declaration).",
+    "The per-glyph review checklist template is drafted and attached (stroke order, direction, guideline alignment, start dots, accuracy vs. cited source).",
+    "Reviewer-recruitment guidance for non-Latin scripts is outlined (where to find script-literate reviewers: language-community organizations, SIL-style literacy programs, university linguistics departments).",
+    "Document committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 8 (Quality, review & risk gates), section 11 (Governance, roles)",
+    "PLAN.md section 2 (beneficiaries — language community orgs, SIL literacy programs)",
+    "TASKS.md M0 acceptance criteria for pilot-007"
+  ],
+  "output": "A committed reviewer-roles document (e.g. docs/reviewer-roles.md) with the per-glyph checklist template, plus a recorded confirmation of the named Latin formation reviewer.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

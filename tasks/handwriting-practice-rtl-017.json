@@ -1,0 +1,32 @@
+{
+  "id": "handwriting-practice-rtl-017",
+  "title": "RTL + positional-form rendering support (Arabic/Hebrew-ready)",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "literacy", "software", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Arabic and Hebrew are underserved and frequently mangled by generic tools — wrong directionality, wrong contextual forms (Arabic isolated/initial/medial/final), wrong stroke order. The renderer must handle RTL layout and select the correct positional form per the model before any RTL script can ship. This work is medium-risk because incorrect RTL or joining behavior in a practice sheet directly teaches the wrong formation. A script reviewer must confirm direction and joining on a sample before merge.",
+  "objective": "Extend the SVG renderer to correctly lay out RTL scripts (right-to-left text flow and guide progression) and select the correct positional form (isolated/initial/medial/final) from the GlyphModel's positionalForms field, with golden-file tests and script reviewer confirmation.",
+  "acceptanceCriteria": [
+    "Renderer correctly lays out RTL scripts: text/glyph flow and guideline progression go right-to-left when ScriptModel.direction == 'rtl'.",
+    "Renderer selects the correct positional form (isolated/initial/medial/final) from GlyphModel.positionalForms based on the glyph's position in a joining sequence.",
+    "Golden-file SVG tests cover: an RTL sample sheet (e.g. isolated Arabic/Hebrew letters) and a joining sequence sample demonstrating form selection; both are byte-stable across runs.",
+    "Script reviewer (script-literate for an RTL script) confirms direction and joining behavior on the sample sheet.",
+    "Determinism preserved; pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 6 (GlyphModel.positionalForms, ScriptModel.direction, RTL handling), section 9 M2",
+    "schema-001 (positionalForms and direction fields in the schema)",
+    "renderer-005 (base SVG renderer to extend)"
+  ],
+  "output": "RTL layout and positional-form selection implemented in packages/core, with golden-file SVG tests for RTL and joining samples — committed via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

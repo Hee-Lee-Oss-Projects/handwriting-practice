@@ -1,0 +1,33 @@
+{
+  "id": "handwriting-practice-scale-023",
+  "title": "Onboard 2 further scripts/styles via the playbook",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M4 validates that the 'add a script' playbook actually works for contributors beyond the core team. Two further scripts or styles — candidates include Latin continuous-cursive, Devanagari, or Hangul, chosen by reviewer availability — are onboarded by following the playbook exactly, demonstrating that new scripts can be added reproducibly without core-maintainer heroics. Each must go through the full medium-risk gate (script-literate reviewer, provenance gate, accessibility variants).",
+  "objective": "Using the playbook-021 add-a-script process, onboard two further scripts or styles (specific scripts TBD by reviewer availability), each with schema-valid models, gate-verified provenance, script-literate reviewer sign-off, and accessibility variants.",
+  "acceptanceCriteria": [
+    "Two further scripts or styles (e.g. Latin continuous-cursive and Devanagari, or Hangul and another — specific choices determined by which script-literate reviewer is secured first) onboarded following the playbook-021 process exactly.",
+    "Each script has: schema-valid GlyphModel JSON, gate-verified open font (gate-002 PASS artifact), SOURCES.md with snapshots, script-literate reviewer sign-off, and accessibility variants rendered.",
+    "Playbook is followed without deviating to core-maintainer shortcuts — any gap found in the playbook is documented as a follow-up task for playbook-021.",
+    "Per-script provenance-gate green; CC-BY-4.0 (or CC-BY-SA-4.0 where compelled) licensing with attribution on all outputs.",
+    "DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M4 (2 further scripts via playbook), section 16 Q3/Q4 (cursive and script-sequencing open questions)",
+    "playbook-021 (add-a-script playbook to follow)",
+    "rtl-017 (RTL support, prerequisite for Arabic/Hebrew)",
+    "scriptrev-014 (script-literate reviewer recruitment)"
+  ],
+  "output": "Two additional scripts/styles onboarded: data/<script>/ directories each with schema-valid models, SOURCES.md, reviewer sign-off, and generated trace-sheet PDFs — committed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

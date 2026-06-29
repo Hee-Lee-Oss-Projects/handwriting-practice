@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-latin-009",
+  "title": "Full Latin print model (A–Z, a–z, 0–9) + SOURCES.md",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "open-content", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Building on the 5-glyph pilot, the full Latin print model extends coverage to all 62 glyphs (A–Z, a–z, 0–9) required for complete early-literacy practice sheets. Every glyph must have a per-glyph sourceRef citing an authoritative formation source, outlines from the gate-verified open font, and reviewer sign-off. National-style variants (e.g. single vs. double-storey 'a'/'g', open vs. closed '4') must be labeled with their source/region rather than presented as uniquely correct — the project is non-prescriptive.",
+  "objective": "Model all 62 Latin print glyphs (A–Z, a–z, 0–9) as schema-valid GlyphModel JSON with per-glyph sourceRef, commit SOURCES.md recording every formation source and the font provenance with snapshots, and obtain formation reviewer sign-off on the complete per-glyph checklist.",
+  "acceptanceCriteria": [
+    "All 62 glyphs (A–Z uppercase, a–z lowercase, 0–9 digits) modeled as schema-valid GlyphModel JSON with ordered strokes[], guidelineAlignment, startPoint, directionHint, and a required sourceRef per glyph.",
+    "SOURCES.md committed recording every formation source (name, URL, license, retrieval date, snapshot SHA-256 + Wayback URL) and the font provenance; provenance-gate green across the full set.",
+    "National-style variants (e.g. single/double-storey a/g, open/closed 4) are modeled as labeled StyleVariants citing their source/region; no variant is presented as the single correct form.",
+    "Formation reviewer signs the per-glyph checklist for all 62 glyphs confirming stroke order and direction match the cited source.",
+    "Model committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M1, section 7 (licensing), section 16 Q6 (national-style neutrality)",
+    "pilot-007 (5-glyph pilot, pattern to extend)",
+    "gate-002 (provenance gate)",
+    "font-003 (verified Latin font)",
+    "reviewer-004 (formation reviewer)"
+  ],
+  "output": "data/latin/ directory with 62 schema-valid GlyphModel JSON files, SOURCES.md with complete provenance records and snapshots, and a reviewer-signed per-glyph checklist — all committed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

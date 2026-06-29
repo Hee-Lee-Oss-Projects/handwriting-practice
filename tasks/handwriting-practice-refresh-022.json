@@ -1,0 +1,32 @@
+{
+  "id": "handwriting-practice-refresh-022",
+  "title": "Font/source staleness + refresh/re-review process",
+  "project": "handwriting-practice",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "governance", "licensing"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Open fonts are updated; source licenses can change; formation sources may be superseded by new national curriculum guidance. Without a staleness-detection and refresh process, the project's license-clean and formation-accurate guarantees decay silently over time. Affected scripts need re-review when their upstream font or source changes — this is a recurring maintenance responsibility, not a one-time task.",
+  "objective": "Define and document the staleness-detection and refresh process: how to detect upstream font updates and source/license changes, how affected scripts become maintenance tasks, and how the provenance-gate is re-run and reviewer sign-off is renewed on refresh.",
+  "acceptanceCriteria": [
+    "Staleness-detection process documented: how to identify when an upstream font has a new version or when a source/license has changed (e.g. periodic check schedule or CI-triggered lookup).",
+    "Refresh workflow defined: when staleness is detected, the affected script's tasks become maintenance tasks with the provenance-gate re-run and reviewer sign-off renewed.",
+    "Process documented for font updates: how to vendor the new version, update the snapshot (SHA-256 + Wayback URL), run the gate, and re-review affected glyphs.",
+    "Ownership assigned: a named maintainer or rotating role is responsible for running the staleness check on a defined cadence.",
+    "Document committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 15 (Sustainability — staleness/refresh process), section 9 M4",
+    "gate-002 (provenance gate to re-run on refresh)",
+    "latin-009 (Latin model as the primary refresh subject)"
+  ],
+  "output": "A committed staleness-detection and refresh-process document (docs/refresh-process.md or similar), defining cadence, ownership, and the gate-re-run workflow — licensed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

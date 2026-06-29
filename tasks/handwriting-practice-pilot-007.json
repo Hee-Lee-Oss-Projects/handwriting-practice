@@ -1,0 +1,38 @@
+{
+  "id": "handwriting-practice-pilot-007",
+  "title": "5-glyph Latin pilot sheet, sourced + reviewed, end-to-end",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "accessibility", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M0 milestone must prove the complete data-first loop — model → renderer → accessible PDF → review — on a minimal real unit before scaling. A 5-glyph Latin pilot (e.g. a c o l 1) exercises every layer: schema-valid glyph models, gate-verified font outlines, deterministic SVG render with 4-line guidelines, PDF output in A4 and Letter, and reviewer sign-off on formation accuracy. This is the cold-start thin slice that validates the whole system works before committing to the full A–Z model.",
+  "objective": "Model 5 Latin glyphs (e.g. a, c, o, l, 1) against the schema-001 schema, render a trace sheet in A4 and US Letter using the gate-verified font, have the formation reviewer sign the per-glyph checklist, and publish the CC-BY-4.0 PDFs + model to the repo.",
+  "acceptanceCriteria": [
+    "5 Latin glyphs (e.g. a c o l 1) modeled as schema-valid GlyphModel JSON with per-glyph sourceRef citing an authoritative formation source.",
+    "Glyph outlines sourced exclusively from the gate-verified open font (font-003 PASS artifact attached).",
+    "Renderer produces a deterministic trace sheet in both A4 and US Letter with a 4-line/3-zone guideline system; golden-file SVG test passes in CI.",
+    "Formation reviewer signs the per-glyph checklist confirming stroke order and direction match the cited source.",
+    "PDFs + model committed CC-BY-4.0; every sheet footer carries font attribution and license text.",
+    "Output handed to an educator from outreach-008 if available; otherwise published to repo with verifiedNeed:false and adoption blocker explicitly surfaced in a BLOCKERS note.",
+    "DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M0 (cold-start thin slice, 5-glyph pilot)",
+    "schema-001 (formation model schema)",
+    "gate-002 (provenance gate policy and PASS artifact)",
+    "font-003 (verified Latin font)",
+    "reviewer-004 (named formation reviewer)",
+    "renderer-005 (deterministic SVG renderer)",
+    "pdf-006 (SVG→PDF pipeline)"
+  ],
+  "output": "5-glyph Latin pilot model (data/latin/pilot/), trace sheet PDFs (A4 + Letter), golden-file SVG fixtures, reviewer-signed per-glyph checklist, and gate PASS artifact — all committed to the repo with CC-BY-4.0 licensing.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

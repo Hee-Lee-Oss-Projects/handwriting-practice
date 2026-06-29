@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-templates-010",
+  "title": "Sheet templates: trace / fade / copy / free-practice",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A single trace sheet is sufficient for the M0 pilot, but a pedagogically useful practice set requires four row types: trace rows (full guide + glyph for tracing), fade-to-blank rows (glyph fades across the row so the learner progressively writes more independently), copy rows (model glyph shown once, rest blank), and free-practice rows (guidelines only). These compose with paper sizes and accessibility variants. The SheetTemplate schema entity must be implemented in the renderer to produce all four row types.",
+  "objective": "Implement the four SheetTemplate row types (trace, fade-to-blank, copy, free-practice) in the renderer, each configurable for paper size (A4 and US Letter) and compatible with the accessibility variants from a11y-011, with deterministic SVG output and golden-file tests.",
+  "acceptanceCriteria": [
+    "Trace row renders the glyph at full opacity with guideline overlay, repeated for a configurable number of repetitions.",
+    "Fade-to-blank row renders the glyph at progressively decreasing opacity across the row (configurable steps) until the final cells are guidelines-only.",
+    "Copy row renders the model glyph once at the start of the row; the remaining cells are guidelines-only for free copying.",
+    "Free-practice row renders guidelines only (no glyph) for unrestricted practice.",
+    "All four templates produce correct output at A4 and US Letter paper sizes with correct margins.",
+    "Templates compose cleanly with the accessibility variants (a11y-011) without layout breakage.",
+    "Golden-file SVG tests for each template type; determinism preserved; pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 5 (Sheet templates — trace, fade-to-blank, copy, free-practice rows)",
+    "PLAN.md section 6 (SheetTemplate entity)",
+    "renderer-005 (base SVG renderer to extend)"
+  ],
+  "output": "Four SheetTemplate implementations in packages/core, with golden-file SVG tests for each — committed via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

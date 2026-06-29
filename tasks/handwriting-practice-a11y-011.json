@@ -1,0 +1,36 @@
+{
+  "id": "handwriting-practice-a11y-011",
+  "title": "Accessibility variants (left-handed/low-vision/ink-saving)",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "accessibility", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Accessibility is a first-class output of this project, not a toggle bolted on later. Three accessibility variants are required at M1: left-handed (direction arrows and start-dots adjusted so left-handed learners are not disadvantaged by guide placement), low-vision (increased contrast and line spacing for legibility), and ink-saving (reduced fill/line weight for inkjet frugality). Variants must compose with each other and with the four sheet templates. Output must be verified on real printed paper, not just on screen.",
+  "objective": "Implement left-handed, low-vision, and ink-saving StyleVariant modes in the renderer; ensure variants compose correctly with all four sheet templates; verify legibility on real printed paper (grayscale-safe); obtain accessibility reviewer sign-off.",
+  "acceptanceCriteria": [
+    "Left-handed variant adjusts guideline arrows, start-dots, and any direction cues so they do not disadvantage left-handed learners (e.g. start-dots and arrows positioned on the left side of each cell).",
+    "Low-vision variant increases line contrast and inter-line spacing to meet legibility standards; verified distinguishable in grayscale.",
+    "Ink-saving variant reduces line weight and fill density without losing formation clarity.",
+    "Variants compose: left-handed + low-vision and other combinations produce correct output without layout errors.",
+    "All variants compose with all four sheet templates (trace, fade, copy, free-practice).",
+    "Output verified legible on real printed paper in grayscale — not only on screen.",
+    "Accessibility reviewer signs off on the variant outputs.",
+    "Golden-file SVG tests for each variant; determinism preserved; pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 6 (StyleVariant — left-handed, low-vision, ink-saving), section 9 M1",
+    "PLAN.md section 5 (Accessibility as first-class output, grayscale-safe)",
+    "PLAN.md Appendix A improvement 9 (accessibility first-class, not a toggle)",
+    "templates-010 (sheet templates to compose with)"
+  ],
+  "output": "Left-handed, low-vision, and ink-saving StyleVariant implementations in packages/core, with golden-file SVG tests and accessibility reviewer sign-off — committed via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-release-019",
+  "title": "Per-script release bundle (PDF pack + model + licenses)",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "literacy", "software", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "For sheets to be adopted by educators and OER repositories, they must be discoverable and downloadable as a coherent release bundle — not just files scattered in the repo. Each script needs a packaged release containing: all PDF variants (templates × accessibility variants × paper sizes), the formation model JSON, the SOURCES.md provenance file, and the full OFL + CC-BY license texts. The bundle should be automatable from CI so new script releases are not a manual process.",
+  "objective": "Implement an automated release bundle builder that packages, per script, the full set of PDFs (all template/variant/paper-size combinations), the formation model, SOURCES.md, and license texts into a downloadable archive, and integrate it into CI.",
+  "acceptanceCriteria": [
+    "Release bundle builder produces a per-script archive containing: all PDF variants (template × accessibility variant × paper size matrix), the schema-valid formation model JSON, SOURCES.md with provenance, and OFL + CC-BY-4.0 license texts.",
+    "Bundle is reproducible from CI given the same inputs (deterministic).",
+    "Bundle includes a manifest JSON listing every file, its role, and its license.",
+    "At least Latin (latin-009) and second script (script2-015) are bundled and released.",
+    "Release process documented in README or docs/ so new scripts can be bundled following the same process.",
+    "pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M3 (discoverable release bundle per script)",
+    "latin-009 (Latin model to bundle)",
+    "script2-015 (second script to bundle)",
+    "footer-012 (attribution/license in every sheet)"
+  ],
+  "output": "Automated per-script release bundle builder integrated into CI, with at least Latin and second-script bundles produced — committed via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

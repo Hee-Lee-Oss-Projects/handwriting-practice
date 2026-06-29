@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-cursive-024",
+  "title": "Latin continuous-cursive model (if open source + reviewer)",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "A continuous-cursive Latin model would extend the project's reach to classrooms and curricula that teach cursive writing alongside print. However, this task is explicitly blocked: it requires both an openly-licensed cursive formation source (not proprietary worksheet art) and a qualified cursive-formation reviewer — neither of which is confirmed. The project policy is to block (not fake): this task is not started until both are secured. It is listed to surface the dependency and invite contributors who can supply the open source and reviewer.",
+  "objective": "Model the Latin continuous-cursive script (joined letterforms, joining strokes, A–Z uppercase and lowercase) as schema-valid GlyphModel JSON with per-glyph sourceRef, using a gate-verified open font and with formation reviewer sign-off — conditional on securing both an open formation source and a cursive reviewer.",
+  "acceptanceCriteria": [
+    "BLOCKER: An openly-licensed cursive formation source (not proprietary worksheet art) is identified, license-verified, and snapshotted per gate-002.",
+    "BLOCKER: A cursive-formation reviewer (qualified teacher or expert in cursive pedagogy) is named and confirms availability.",
+    "Latin continuous-cursive glyphs (A–Z uppercase and lowercase, plus standard joining strokes) modeled as schema-valid GlyphModel JSON with per-glyph sourceRef.",
+    "Gate-verified open font for cursive forms sourced (gate-002 PASS artifact attached).",
+    "Formation reviewer signs the per-glyph checklist for joined letterforms and joining strokes.",
+    "Sheets render in A4 and US Letter; CC-BY-4.0 with attribution; provenance-gate green.",
+    "DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M4, section 3 (non-prescriptive framing — no cursive vs print endorsement), section 16 Q3 (cursive open question)",
+    "gate-002 (provenance gate — must pass for both font and source)",
+    "latin-009 (Latin print model as pattern)"
+  ],
+  "output": "data/latin-cursive/ directory with schema-valid cursive GlyphModel JSON files, SOURCES.md, reviewer-signed checklist, and trace-sheet PDFs — committed CC-BY-4.0. (Task remains blocked until open source + reviewer are secured.)",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

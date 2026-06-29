@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-devanagari-025",
+  "title": "Devanagari model (headline/conjuncts/matras)",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Devanagari is used by Hindi, Sanskrit, Nepali, Marathi, and many other South Asian languages, making it one of the world's most widely written scripts. It is underserved by free, correctly-formed practice materials. Devanagari has unique structural features — the headline (shirorekha), conjunct consonants (stacked forms), and matras (vowel diacritics) — that generic tools consistently mangle. This task is blocked on securing a script-literate reviewer who is a native/fluent Devanagari writer or qualified teacher.",
+  "objective": "Model Devanagari consonants, vowels, matras, and common conjunct forms as schema-valid GlyphModel JSON with per-glyph sourceRef and headline/shirorekha guideline system, using a gate-verified open Devanagari font and with script-literate reviewer sign-off.",
+  "acceptanceCriteria": [
+    "BLOCKER: A script-literate Devanagari reviewer (native/fluent writer or qualified teacher of Hindi/Sanskrit/Nepali or another Devanagari-script language) is named and confirmed.",
+    "Devanagari consonants (ka–ha), independent vowels, vowel matras, anusvara, visarga, and a representative set of common conjuncts modeled as schema-valid GlyphModel JSON with per-glyph sourceRef.",
+    "Guideline system includes the shirorekha (headline/header line) specific to Devanagari; guideline geometry parameterized in GuidelineSystem.",
+    "Gate-verified open Devanagari font sourced (gate-002 PASS artifact attached); SOURCES.md committed with provenance and snapshots.",
+    "Script-literate reviewer signs the per-glyph checklist confirming stroke order, conjunct forms, matra placement, and headline alignment match the authoritative source.",
+    "Sheets render in A4 and US Letter; CC-BY-4.0 with attribution; provenance-gate green.",
+    "DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M4, section 2 (Indic scripts as underserved), section 5 (Devanagari with headline/conjuncts/shirorekha in guideline systems)",
+    "gate-002 (provenance gate)",
+    "playbook-021 (add-a-script playbook to follow)"
+  ],
+  "output": "data/devanagari/ directory with schema-valid GlyphModel JSON files (consonants, vowels, matras, conjuncts), SOURCES.md, Devanagari guideline system, reviewer-signed checklist, and trace-sheet PDFs — committed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

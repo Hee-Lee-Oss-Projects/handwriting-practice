@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-hangul-026",
+  "title": "Hangul syllabic-block model",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Hangul is the script of the Korean language and is composed of syllabic blocks (onset consonant + vowel + optional coda), each fitting within a square cell. Correctly modeling Hangul requires understanding block composition, stroke order within each jamo (individual character component), and grid-based guideline geometry. Wrong stroke order in Hangul practice sheets would reinforce incorrect motor habits. This task is blocked on securing a script-literate Korean reviewer.",
+  "objective": "Model the Hangul jamo (initial consonants, vowels, final consonants) and representative syllabic block compositions as schema-valid GlyphModel JSON with per-glyph sourceRef and grid-based guideline system, using a gate-verified open Hangul font and with script-literate reviewer sign-off.",
+  "acceptanceCriteria": [
+    "BLOCKER: A script-literate Hangul reviewer (native/fluent Korean writer or qualified teacher) is named and confirmed.",
+    "Hangul jamo modeled: initial consonants (초성), vowels (중성), and final consonants (종성), plus representative syllabic block compositions — all as schema-valid GlyphModel JSON with per-glyph sourceRef.",
+    "Grid-based guideline system (square cell per syllabic block) defined in GuidelineSystem and implemented in the renderer.",
+    "Gate-verified open Hangul font sourced (gate-002 PASS artifact attached); SOURCES.md committed with provenance and snapshots.",
+    "Script-literate reviewer signs the per-glyph checklist confirming stroke order within each jamo and block composition matches the authoritative source.",
+    "Sheets render in A4 and US Letter; CC-BY-4.0 with attribution; provenance-gate green.",
+    "DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M4, section 2 (Hangul syllabic-block model), section 5 (grid guides for CJK)",
+    "gate-002 (provenance gate)",
+    "playbook-021 (add-a-script playbook to follow)"
+  ],
+  "output": "data/hangul/ directory with schema-valid jamo and block GlyphModel JSON files, SOURCES.md, grid-based guideline system, reviewer-signed checklist, and trace-sheet PDFs — committed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

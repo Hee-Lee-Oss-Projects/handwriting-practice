@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-scriptrev-014",
+  "title": "Recruit + credit script-literate reviewer(s)",
+  "project": "handwriting-practice",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "governance", "outreach"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Non-Latin scripts carry a medium risk tier because wrong stroke order, directionality, or contextual forms taught to learners are hard to unlearn and disproportionately harm communities whose scripts are already underserved. The project's policy is to block (not fake): no non-Latin script ships until a script-literate reviewer — a native/fluent writer or qualified teacher of that specific script — signs the per-glyph checklist. Securing these reviewers is the critical-path dependency for M2.",
+  "objective": "Recruit at least one script-literate reviewer for each M2 target script (e.g. Cyrillic and Greek), record their credentials, conflict-of-interest declarations, and contact details, and credit them in the repo.",
+  "acceptanceCriteria": [
+    "At least one named script-literate reviewer confirmed for the primary M2 script (candidate: Cyrillic) — native/fluent writer or qualified teacher of that script.",
+    "At least one named script-literate reviewer confirmed for the secondary M2 script (candidate: Greek) — native/fluent writer or qualified teacher of that script.",
+    "Each reviewer's qualifications, conflict-of-interest declaration, and contact details recorded in a committed reviewer registry (e.g. docs/reviewers.md).",
+    "Reviewers credited in the repo (CONTRIBUTORS or similar) with their consent.",
+    "Reviewer-recruitment sources documented (language-community organizations, university linguistics departments, SIL-style literacy programs).",
+    "Document committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 11 (Script-literate reviewer role — TO BE SECURED per script)",
+    "PLAN.md section 13 (Risk: reviewer scarcity blocks a script)",
+    "reviewer-004 (Latin reviewer role, pattern to follow for non-Latin)",
+    "outreach-008 (partner contacts who may supply script-literate reviewers)"
+  ],
+  "output": "A committed reviewer registry (docs/reviewers.md or similar) with confirmed script-literate reviewers named, qualified, and credited for the M2 target scripts.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

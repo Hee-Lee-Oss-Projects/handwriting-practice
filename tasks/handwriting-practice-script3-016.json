@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-script3-016",
+  "title": "Third script model (Greek) + SOURCES.md",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "literacy", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Greek is the secondary M2 candidate script, serving Greek-language learners, classical-language students, and diaspora communities. Like Cyrillic, wrong stroke order or letter forms harm learners whose script may not be well-served by existing free materials. Greek is LTR and relatively lower-complexity than Arabic/Hebrew, making it a good second proof of the non-Latin playbook alongside Cyrillic. A gate-verified open Greek font and a confirmed script-literate reviewer are blocking dependencies.",
+  "objective": "Model all Greek letters (uppercase and lowercase) and relevant digits as schema-valid GlyphModel JSON with per-glyph sourceRef, commit SOURCES.md with full provenance and snapshots, and obtain script-literate reviewer sign-off on the per-glyph checklist.",
+  "acceptanceCriteria": [
+    "All Greek glyphs (uppercase Α–Ω and lowercase α–ω, plus any script-specific variants) modeled as schema-valid GlyphModel JSON with per-glyph sourceRef citing an authoritative Greek formation source.",
+    "Gate-verified open Greek font sourced (gate-002 PASS artifact attached); SOURCES.md committed with name, URL, license, retrieval date, snapshot SHA-256 + Wayback URL.",
+    "Script-literate reviewer (native/fluent Greek writer or qualified teacher) signs the per-glyph checklist confirming stroke order, direction, and letter forms match the cited source.",
+    "Sheets render in A4 and US Letter with the script-appropriate guideline system; provenance-gate green.",
+    "Model committed CC-BY-4.0 (or CC-BY-SA-4.0 if a share-alike source is used, kept separable); every sheet footer carries attribution and license text.",
+    "DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M2 (third script, candidate Greek), section 8 (medium risk — script-literate reviewer mandatory)",
+    "latin-009 (Latin model as pattern)",
+    "gate-002 (provenance gate)",
+    "scriptrev-014 (script-literate reviewer for Greek)"
+  ],
+  "output": "data/greek/ directory with schema-valid GlyphModel JSON files, SOURCES.md with complete provenance records, reviewer-signed per-glyph checklist, and generated trace-sheet PDFs — committed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

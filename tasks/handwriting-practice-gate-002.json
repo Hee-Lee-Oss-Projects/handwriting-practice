@@ -1,0 +1,35 @@
+{
+  "id": "handwriting-practice-gate-002",
+  "title": "Font + source license/provenance gate (blocking)",
+  "project": "handwriting-practice",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "open-content", "licensing"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "handwriting-practice must ensure every font and stroke-order source used in generated sheets is openly licensed (OFL, PD/CC0, CC-BY, or CC-BY-SA with share-alike handling). Without a formal, default-deny provenance gate that fails the build on any unverified asset, a proprietary glyph or unattributed source could silently slip into redistributed PDFs — a license breach that would undermine the entire project's legal standing. The gate is a blocking role: no script ships until it passes.",
+  "objective": "Design and publish the font + source license/provenance gate: a documented policy (allowed/excluded license types), a build check that default-denies any asset lacking a complete verified open-license record, a required license-snapshot format (local copy + SHA-256 + Wayback URL), and OFL/CC-BY-SA/NC handling rules.",
+  "acceptanceCriteria": [
+    "Policy document enumerates allowed licenses (OFL, CC0/PD, CC-BY, CC-BY-SA with SA handling) and excluded ones (proprietary, no-embed/no-redistribution, NC-only).",
+    "Default-deny rule: an asset passes only if an open license permitting redistribution (and derivatives where the model overlays/modifies) is recorded with a cited URL; missing or unparseable evidence causes FAIL with no default-allow.",
+    "License-snapshot format specified: a committed local copy of the license text, a SHA-256 hash, and a Wayback Machine URL per asset.",
+    "OFL Reserved Font Name rule encoded: overlay must remain a separate layer; any actual outline modification triggers a rename per OFL.",
+    "CC-BY-SA share-alike handling encoded: SA-derived models kept separable and SA-licensed; NC sources excluded outright.",
+    "Gate produces a committed PASS/FAIL artifact per asset and a CI check that fails the build on any unverified referenced asset.",
+    "Document committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 7 (Data, licensing & compliance)",
+    "SIL Open Font License (OFL) 1.1",
+    "Creative Commons CC-BY-4.0 / CC-BY-SA-4.0",
+    "KanjiVG (CC-BY-SA) — share-alike reference case"
+  ],
+  "output": "A gate-policy document committed to the repo (e.g. docs/provenance-gate.md or packages/provenance-gate/README.md) plus the CI check implementation, with a PASS/FAIL artifact schema and snapshot format specified.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

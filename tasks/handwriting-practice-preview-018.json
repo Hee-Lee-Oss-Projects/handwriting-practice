@@ -1,0 +1,36 @@
+{
+  "id": "handwriting-practice-preview-018",
+  "title": "Static client-side web preview (no backend/storage)",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "literacy", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Educators and learners need a low-friction way to select and print sheets without running a CLI. A static, client-side web preview (no backend, no user accounts, no analytics that profile individuals) allows selection of script, template, and variant and triggers print/download. Any optional name-personalization feature must be in-memory only, never persisted or transmitted — this is a hard privacy constraint. The UI must be accessible (keyboard navigation, color contrast) and its SVG/PDF output must match CLI golden files.",
+  "objective": "Build and deploy a static, client-side web preview that lets users select script, template, and accessibility variant, then print or download the resulting sheet — with no backend, no storage, no individual-profiling analytics, and accessible UI.",
+  "acceptanceCriteria": [
+    "Static client-side application (no backend, no server-side storage) allows selection of: script, sheet template (trace/fade/copy/free-practice), accessibility variant, and paper size.",
+    "Print/download action produces the same SVG/PDF output as the CLI for identical inputs (verified against golden files).",
+    "Any optional name-personalization is in-memory only: never persisted to localStorage, cookies, or any remote endpoint; never logged.",
+    "UI is keyboard-accessible and meets color-contrast standards (WCAG 2.1 AA minimum).",
+    "No third-party analytics, tracking scripts, or resources that profile individual users.",
+    "Static build can be hosted on any static hosting (GitHub Pages, etc.) without a backend.",
+    "pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 5 (web preview — optional, M3+, client-side only, no backend/storage)",
+    "PLAN.md section 7E (privacy/PII — name field in-memory only, never persisted)",
+    "PLAN.md section 14 (security & privacy — no PII, no analytics that profile individuals)",
+    "templates-010 (sheet templates)",
+    "a11y-011 (accessibility variants)"
+  ],
+  "output": "A static client-side web preview application committed to the repo and deployable to static hosting — no backend, no PII — via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

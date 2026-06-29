@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-playbook-021",
+  "title": "\"Add a script\" playbook + reviewer-recruitment guide",
+  "project": "handwriting-practice",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "literacy", "governance", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's sustainability depends on language communities being able to add new scripts without requiring core maintainer involvement at every step. The M2 work (Cyrillic, Greek) proved the playbook in practice; now it must be written down so the process is reproducible. Without a documented playbook and reviewer-recruitment guide, adding Devanagari, Hangul, Arabic, or any future script is ad-hoc and unscalable. This document is the key M4 foundation.",
+  "objective": "Write and commit a step-by-step 'add a script' playbook covering: sourcing a formation reference, verifying an open font through the gate, modeling glyphs, recruiting a script-literate reviewer, rendering accessibility variants, and publishing with licenses — plus the per-glyph review checklist template and reviewer-recruitment guidance.",
+  "acceptanceCriteria": [
+    "Playbook covers all steps in sequence: (1) identify authoritative formation source and verify its license, (2) identify and gate-verify an open font, (3) model glyphs against the schema, (4) recruit a script-literate reviewer using the guidance, (5) render trace sheets in all templates and variants, (6) obtain reviewer sign-off on the per-glyph checklist, (7) commit with provenance records, CC-BY license, and attribution.",
+    "Per-glyph review checklist template included: fields for stroke order, directionality, contextual forms, diacritics/matras, and reviewer sign-off.",
+    "Reviewer-recruitment guidance covers: where to find script-literate reviewers (language-community orgs, university linguistics departments, SIL-style literacy programs), conflict-of-interest requirements, and how to credit contributors.",
+    "Playbook is written in plain language accessible to a non-core contributor.",
+    "Document committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 9 M4 (add-a-script playbook), section 15 (sustainability)",
+    "script2-015 (Cyrillic model as a worked example)",
+    "script3-016 (Greek model as a worked example)",
+    "reviewer-004 (Latin reviewer role template)",
+    "scriptrev-014 (script-literate reviewer process)"
+  ],
+  "output": "A committed add-a-script playbook document (docs/add-a-script.md or similar) with per-glyph checklist template and reviewer-recruitment guide — licensed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

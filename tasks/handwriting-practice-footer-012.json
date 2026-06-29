@@ -1,0 +1,34 @@
+{
+  "id": "handwriting-practice-footer-012",
+  "title": "Per-sheet attribution + license footer + manifest",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "literacy", "software", "licensing"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "OFL licensing requires that OFL font attribution and the license text accompany any redistribution. CC-BY-4.0 output requires attribution on every sheet. Without an automated footer and manifest, maintainers must add these manually, which is error-prone and will eventually be omitted. The footer must be part of the render pipeline so attribution is structurally guaranteed — no sheet can be generated without it.",
+  "objective": "Implement a per-sheet SVG footer that embeds font attribution and CC-BY-4.0 license notice in every generated sheet, and a per-batch manifest JSON recording the provenance of every file in a render run.",
+  "acceptanceCriteria": [
+    "Every generated SVG (and resulting PDF) includes a visible footer with: font name and OFL attribution, CC-BY-4.0 license notice, and project URL/source.",
+    "Footer text is legible at standard print resolution and does not overlap sheet content.",
+    "A manifest JSON is emitted per render batch recording: file paths, script, template, variant, paper size, font provenance reference, and CC-BY-4.0 license.",
+    "Footer and manifest are produced automatically by the render pipeline — they cannot be suppressed or omitted.",
+    "Footer content is sourced from the AssetProvenance record in the ScriptModel, so it stays correct when the font is updated.",
+    "pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 7A (OFL specifics — attribution required), section 7G (output licensing CC-BY-4.0)",
+    "PLAN.md section 6 (AssetProvenance entity)",
+    "pdf-006 (SVG→PDF pipeline where footer is embedded)",
+    "renderer-005 (SVG renderer to extend)"
+  ],
+  "output": "Per-sheet attribution footer and per-batch manifest implementation in packages/core/cli, committed via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

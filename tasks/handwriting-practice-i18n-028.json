@@ -1,0 +1,33 @@
+{
+  "id": "handwriting-practice-i18n-028",
+  "title": "Translate sheet labels/instructions per locale",
+  "project": "handwriting-practice",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "accessibility", "open-content"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Sheet labels and instructions (e.g. 'Trace the letters', 'Copy the letter', column/row headers) are currently in English. Non-English-speaking educators and learners — particularly those in refugee, migrant, and mother-tongue education programs that are core beneficiaries — need these labels in their own language to use the sheets effectively. Each locale translation requires a language reviewer to ensure pedagogical accuracy, not just fluency. The set of locales is not yet enumerated; this task represents the translation work for any confirmed locale.",
+  "objective": "Translate sheet labels, instructions, and UI text into at least one confirmed non-English locale, with a language reviewer verifying pedagogical accuracy, and integrate the translations into the render pipeline so sheets can be generated with localized labels.",
+  "acceptanceCriteria": [
+    "At least one non-English locale (specific locale to be confirmed by partner/educator need and reviewer availability) fully translated: all sheet labels, template instructions, and UI text strings.",
+    "Language reviewer (fluent speaker with pedagogical context, not machine translation alone) verifies the translations for accuracy and appropriate register for the target learner age group.",
+    "Translations integrated into the render pipeline: sheets can be generated with localized labels by passing a locale parameter.",
+    "Translation strings stored in a structured, localizable format (e.g. JSON locale files) that supports adding further locales without code changes.",
+    "Translated sheets verified to render correctly (text fits within label areas, no overflow or clipping).",
+    "Translations committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 2 (Beneficiaries — refugee, migrant, mother-tongue education programs)",
+    "TASKS.md backlog entry for i18n-028",
+    "templates-010 (sheet templates containing label/instruction strings to translate)"
+  ],
+  "output": "Locale JSON translation files committed to the repo, integrated into the render pipeline, and verified by a language reviewer — with at least one complete non-English locale — licensed CC-BY-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

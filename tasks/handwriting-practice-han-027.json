@@ -1,0 +1,36 @@
+{
+  "id": "handwriting-practice-han-027",
+  "title": "Han/CJK via KanjiVG (CC-BY-SA)",
+  "project": "handwriting-practice",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "open-content", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Han/CJK characters are used in Chinese, Japanese, and Korean writing and have established stroke orders (documented in KanjiVG, CC-BY-SA). Using KanjiVG as a source triggers share-alike: any derived model layer built from it inherits CC-BY-SA and must be kept separable from CC-BY-only models. This task is blocked on a policy decision (adopt CC-BY-SA models in-repo or keep strictly CC-BY and defer Han scripts) and on securing a script-literate CJK reviewer.",
+  "objective": "Derive Han/CJK glyph stroke-order models from KanjiVG (CC-BY-SA), commit them under CC-BY-SA-4.0 as a separable model layer, with grid-based guideline geometry and script-literate reviewer sign-off — conditional on the CC-BY-SA policy decision and reviewer availability.",
+  "acceptanceCriteria": [
+    "BLOCKER: CC-BY-SA policy decision confirmed by the maintainer (adopt SA models in-repo as a separable layer, or defer Han scripts entirely).",
+    "BLOCKER: A script-literate CJK reviewer (qualified teacher or native/fluent writer of a Han-script language) is named and confirmed.",
+    "Han/CJK glyph models derived from KanjiVG: stroke paths, stroke order, and start points extracted and expressed as schema-valid GlyphModel JSON with sourceRef to KanjiVG.",
+    "KanjiVG CC-BY-SA license honored: derived model layer committed under CC-BY-SA-4.0 and kept separable from CC-BY-only models in the repo structure.",
+    "Grid guideline system (square cell per character) defined in GuidelineSystem.",
+    "Gate-verified open CJK font sourced (gate-002 PASS artifact); SOURCES.md committed with full provenance and KanjiVG snapshot.",
+    "Script-literate reviewer signs the per-glyph checklist.",
+    "DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 7C (share-alike handling — KanjiVG CC-BY-SA), section 16 Q5 (SA policy open question)",
+    "KanjiVG — https://kanjivg.tagaini.net/ (CC-BY-SA source)",
+    "gate-002 (provenance gate)",
+    "playbook-021 (add-a-script playbook to follow)"
+  ],
+  "output": "data/han/ directory (separable CC-BY-SA layer) with schema-valid GlyphModel JSON files derived from KanjiVG, SOURCES.md with KanjiVG provenance, reviewer-signed checklist, and trace-sheet PDFs — committed CC-BY-SA-4.0.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-SA-4.0"
+}

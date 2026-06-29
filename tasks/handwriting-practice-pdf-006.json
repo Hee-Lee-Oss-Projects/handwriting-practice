@@ -1,0 +1,33 @@
+{
+  "id": "handwriting-practice-pdf-006",
+  "title": "SVG→PDF pipeline + A4/Letter paper sizing",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "SVG is the source-of-truth output of the renderer; printable PDFs are the downstream artifact beneficiaries actually use. The SVG→PDF conversion must be deterministic, print-faithful (dimensions accurate to the target paper size), and based on an openly-licensed library. Both A4 and US Letter must be supported from the start because the project serves global learners. The chosen toolchain decision must be recorded and the library pinned.",
+  "objective": "Select, integrate, and document an openly-licensed SVG→PDF conversion library; implement paper-size handling (A4 and US Letter, portrait, with correct margins); ensure the pipeline is deterministic and produces grayscale-safe, print-faithful PDFs.",
+  "acceptanceCriteria": [
+    "SVG→PDF conversion library is openly licensed (MIT, Apache 2.0, or equivalent permissive license) and the choice is recorded with rationale in the repo.",
+    "Pipeline produces print-faithful PDFs in A4 (210×297 mm) and US Letter (8.5×11 in) at correct physical dimensions.",
+    "Output is deterministic: identical SVG + paper size → byte-stable PDF (or as close as the library allows, with any non-determinism documented).",
+    "PDFs are grayscale-safe by default (no color-only information critical to the sheet).",
+    "Pipeline integrated into packages/cli or packages/core and exercised by at least one end-to-end test.",
+    "Library version pinned; pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 6 (Key decisions — SVG→PDF toolchain), section 16 open Q1",
+    "PLAN.md section 5 (Scope — A4 + US Letter, portrait, grayscale-safe)",
+    "renderer-005 (SVG output to be consumed by this pipeline)"
+  ],
+  "output": "SVG→PDF conversion integrated into the project build, with paper-size handling, a recorded toolchain decision, and end-to-end tests — committed via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

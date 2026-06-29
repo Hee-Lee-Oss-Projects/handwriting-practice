@@ -1,0 +1,32 @@
+{
+  "id": "handwriting-practice-outreach-008",
+  "title": "Partner/educator outreach + adoption-path shortlist",
+  "project": "handwriting-practice",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "literacy", "outreach"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "All tasks carry verifiedNeed:false and requestor:TO BE SECURED because per-deliverable adoption by a named educator or org is not yet confirmed. Without a real beneficiary accepting the sheets, the project's headline outcome metric (sheets used in real teaching) cannot be met. Outreach to educators, literacy NGOs, homeschool co-ops, refugee-education programs, and OER repositories must begin at M0 so partners are in the loop before the pilot is ready to hand over.",
+  "objective": "Contact at least 3 candidate partners (e.g. a literacy/refugee-education NGO, an early-literacy teacher network, and an OER repository), document the outreach, and produce a realistic adoption-path shortlist including a self-serve OER fallback if no partner confirms.",
+  "acceptanceCriteria": [
+    "At least 3 candidate partners contacted from distinct categories (literacy/refugee-education NGO, teacher/educator network, OER portal).",
+    "Outreach log committed: partner name, contact date, channel, response status, and any commitments made.",
+    "Adoption-path shortlist documents at least two realistic paths to use: (a) direct educator adoption and (b) OER self-publish fallback with the blocker surfaced.",
+    "Any partner that confirms adoption is recorded; the corresponding tasks are identified for verifiedNeed and requestor updates.",
+    "Document committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 2 (Beneficiaries), section 11 (Steward role), section 13 (Risks — no partner adopts)",
+    "PLAN.md section 8 (Definition of Shipped — self-serve OER fallback)",
+    "TASKS.md M3 adoption-020 (confirmed adoption target)"
+  ],
+  "output": "A committed outreach log and adoption-path shortlist (e.g. docs/outreach.md), with at least 3 contacts recorded and a self-serve OER fallback path documented.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

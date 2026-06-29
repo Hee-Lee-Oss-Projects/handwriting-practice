@@ -1,0 +1,33 @@
+{
+  "id": "handwriting-practice-adoption-020",
+  "title": "Confirm first partner adoption + record outcome",
+  "project": "handwriting-practice",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "literacy", "outreach"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's headline success metric is sheets used in real teaching by a named educator or org — not download counts. All tasks carry verifiedNeed:false until a partner confirms. Securing the first confirmed adoption closes the M3 milestone and triggers verifiedNeed:true on the relevant tasks. Evidence must be real (attestation, photo-of-use, or written confirmation) — not speculative. The outcome is recorded in the project's outcome ledger.",
+  "objective": "Secure and record confirmation from at least one named educator or organization that they have used the handwriting-practice sheets with real learners, provide adoption evidence, and update the outcome ledger and affected task records.",
+  "acceptanceCriteria": [
+    "At least one named educator/org provides confirmed use of sheets with real learners, with evidence (written attestation, photo-of-use, or equivalent).",
+    "Outcome ledger entry committed recording: partner name/org, date, script(s) used, template/variant used, approximate learner count (opt-in, not tracked), and evidence reference.",
+    "All tasks corresponding to the confirmed-adopted sheet set updated with verifiedNeed:true and requestor set to the confirmed partner.",
+    "Evidence document committed (or reference to external attestation committed) — no fabricated or speculative adoption counts.",
+    "Document committed CC-BY-4.0; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 4 (Success metrics — adoption by named educator, partner-reported learner count)",
+    "PLAN.md section 8 (Definition of Shipped — handed to a named beneficiary)",
+    "fieldtest-013 (educator field-test as a path to confirmed adoption)",
+    "outreach-008 (partner contacts)"
+  ],
+  "output": "A committed outcome ledger entry with adoption evidence and affected task verifiedNeed/requestor updates — marking the first confirmed real-world use.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

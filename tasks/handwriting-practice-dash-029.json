@@ -1,0 +1,33 @@
+{
+  "id": "handwriting-practice-dash-029",
+  "title": "Outcome dashboard (adoptions + reuse events)",
+  "project": "handwriting-practice",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "literacy", "software", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's success metrics are outcome-based: adoption by named educators, learners reached (partner-reported), and verifiable reuse events — not download counts. These outcomes are recorded in the project's outcome ledger (a committed file, not analytics). A static outcome dashboard that reads this ledger and displays confirmed adoptions and reuse events makes the project's impact visible to potential partners, donors, and the broader open-education community, without collecting or displaying any individual user data.",
+  "objective": "Build a static, client-side outcome dashboard that reads the committed outcome ledger and displays confirmed adoptions, partner-reported learner counts, and verifiable reuse events — with no backend, no individual tracking, and no analytics beyond the ledger entries.",
+  "acceptanceCriteria": [
+    "Static, client-side dashboard reads the committed outcome ledger (a structured JSON or Markdown file in the repo) and displays: confirmed adoptions (partner name/org, date, script/template used), partner-reported learner counts (opt-in only), and verifiable reuse events.",
+    "No backend, no individual user analytics, no tracking — all data comes from the committed ledger.",
+    "Dashboard is accessible (keyboard navigation, color contrast WCAG 2.1 AA) and legible on mobile.",
+    "No PII collected or displayed: learner counts are aggregate, partner-reported, opt-in; no individual learner names or data.",
+    "Dashboard deployable as a static page alongside the web preview (preview-018).",
+    "pnpm build && pnpm test && pnpm lint pass; DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md section 4 (Success metrics — outcome-based, not vanity downloads; anti-metric),  section 14 (security & privacy — no analytics that profile individuals)",
+    "adoption-020 (outcome ledger entries that feed the dashboard)",
+    "preview-018 (static web preview to co-deploy with)"
+  ],
+  "output": "A static outcome dashboard committed to the repo and deployable alongside the web preview — committed via PR with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
