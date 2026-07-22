@@ -243,7 +243,7 @@ This is the project's central gate. Two asset classes each have a hard rule.
 - **We do not copy proprietary worksheet artwork.** We record the *facts of formation* (which
   facts are not copyrightable) and express them in our own original SVG overlay.
 - Each script's `SOURCES.md` records: source name, URL, license, retrieval date, and a license
-  **snapshot** (committed copy + SHA-256 + Wayback URL), mirroring Elyos's open-data provenance
+  **snapshot** (committed copy + SHA-256 + Wayback URL), mirroring Hee-Lee Oss's open-data provenance
   practice.
 
 ### C. Share-alike handling
@@ -369,7 +369,7 @@ unsourced; no non-Latin script ships unreviewed; no asset ships unlicensed.**
 
 The itemized, schema-mapped backlog lives in **TASKS.md** — milestone tables (M0–M4), per-task
 acceptance criteria, Definitions of Done, a backlog, and a complete schema-valid example Task
-JSON. Each task maps to an Elyos Task JSON (`packages/schema/src/schemas.ts`). All tasks start
+JSON. Each task maps to a Hee-Lee Oss Task JSON (`packages/schema/src/schemas.ts`). All tasks start
 `verifiedNeed: false` / `requestor: TO BE SECURED` until a partner is confirmed.
 
 ---
@@ -391,7 +391,7 @@ JSON. Each task maps to an Elyos Task JSON (`packages/schema/src/schemas.ts`). A
 - **Partner / requestor** — the educator/NGO/school requesting and adopting sheets.
   **TO BE SECURED.**
 
-Conflict-of-interest and veto checklist per Elyos governance; license/provenance and
+Conflict-of-interest and veto checklist per Hee-Lee Oss governance; license/provenance and
 script-review roles cannot be waived.
 
 ---
@@ -403,7 +403,7 @@ script-review roles cannot be waived.
 - **Stroke-order sources** — national/curricular handwriting guidance; **KanjiVG** (CC-BY-SA)
   for any Han content; established literacy-program formation guides.
 - **SVG→PDF library** — an openly-licensed converter (decision recorded; pinned version).
-- **Elyos pieces** — task schema (`packages/schema`), CLI workspace conventions, the donated-
+- **Hee-Lee Oss pieces** — task schema (`packages/schema`), CLI workspace conventions, the donated-
   lane PR workflow, the outcome-ledger pattern, and the open-data provenance/snapshot practice
   reused here for fonts/sources.
 - **Distribution** — repo releases; optional static host for the web preview (no backend).
@@ -484,10 +484,10 @@ script-review roles cannot be waived.
 
 ## 17. References
 
-- Elyos `CLAUDE.md` — work rules, lanes, quality bar, refusal guardrails.
-- Elyos `docs/good-deed-definition.md` — five criteria + risk tiers.
-- Elyos `packages/schema/src/schemas.ts` — Task JSON schema (TASKS.md maps to it).
-- Elyos `planning/ROADMAP.md` — portfolio context (handwriting-practice, Track 3).
+- Hee-Lee Oss `CLAUDE.md` — work rules, lanes, quality bar, refusal guardrails.
+- Hee-Lee Oss `docs/good-deed-definition.md` — five criteria + risk tiers.
+- Hee-Lee Oss `packages/schema/src/schemas.ts` — Task JSON schema (TASKS.md maps to it).
+- Hee-Lee Oss `planning/ROADMAP.md` — portfolio context (handwriting-practice, Track 3).
 - Sibling pattern: `planning/projects/open-data-datasheets/` — provenance/snapshot + gate model
   reused here for fonts/sources.
 - SIL Open Font License (OFL) 1.1 — font licensing terms and Reserved Font Name rules.
@@ -515,7 +515,7 @@ to the PLAN above and to TASKS.md.
    content is practice material only, with reviewed disclaimers. §3, §8, §13.
 6. **Non-prescriptive, non-partisan stance** — no cursive-vs-print or national-style
    endorsement; styles labeled with source/region. §3, §7F, §13.
-7. **License snapshots (committed copy + SHA-256 + Wayback)** adopted from Elyos open-data
+7. **License snapshots (committed copy + SHA-256 + Wayback)** adopted from Hee-Lee Oss open-data
    practice for fonts and sources. §7B, tasks.
 8. **Determinism as a tested property** — golden-file SVG tests + pinned fonts/renderer so
    review and diffs are meaningful. §6 decisions, §13.

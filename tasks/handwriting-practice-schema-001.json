@@ -22,8 +22,8 @@
     "pnpm build && pnpm test && pnpm lint pass for any committed tooling; commit is DCO signed-off."
   ],
   "resources": [
-    "C:\\code\\elyos\\planning\\projects\\handwriting-practice\\PLAN.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "C:\\code\\hee-lee-oss\\planning\\projects\\handwriting-practice\\PLAN.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
     "SIL Open Font License (OFL) 1.1",
     "ISO 15924 script codes",
     "Datasheets/provenance pattern: planning/projects/open-data-datasheets"

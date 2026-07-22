@@ -243,7 +243,7 @@ and a differentiator.
 
 - **Reusable worksheet-generation engine.** The `(model + template + variant + paper) → SVG → PDF`
   core with a provenance gate and accessibility matrix is **script-agnostic and domain-agnostic**.
-  Factor it into a shared `worksheet-core` that other Elyos printables reuse.
+  Factor it into a shared `worksheet-core` that other Hee-Lee Oss printables reuse.
 - **`math-manipulatives-printables`** — number lines, grids, base-10, fraction strips, clock faces:
   same deterministic SVG→PDF engine, same A4/Letter + accessibility + CC-BY pipeline.
 - **`decodable-readers` / `literacy-from-zero`** — direct content tie-in: handwriting word lists
